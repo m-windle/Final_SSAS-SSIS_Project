@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7cbdfd0b-586b-441d-b533-e5e52bd3b360" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Project DM MK3</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Production</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ca0a4625-5bd2-4d65-a37f-070e3c5d27ae">
+          <ID>Fact Production</ID>
+          <Name>Fact Production</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="620b298d-fcc3-45b2-bc2f-cab2f4cd6c12">
+            <DataSourceViewID>Project DM MK3</DataSourceViewID>
+            <TableID>dbo_FactProduction</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Purchasing</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="442283a9-d417-4267-ac36-6e15e917c49e">
+          <ID>Fact Purchasing</ID>
+          <Name>Fact Purchasing</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4e9371d5-b6f6-4362-aa92-45b9ed4f3202">
+            <DataSourceViewID>Project DM MK3</DataSourceViewID>
+            <TableID>dbo_FactPurchasing</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="38e98f6f-f6d9-4fa6-b980-248e34bd2d03">
+          <ID>Fact Sales</ID>
+          <Name>Fact Sales</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a8af422e-41ca-4dad-b3a6-3ede229e5787">
+            <DataSourceViewID>Project DM MK3</DataSourceViewID>
+            <TableID>dbo_FactSales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales Reason</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f45c43a0-83b4-4c69-ab31-122aa80b4292">
+          <ID>Fact Sales Reason</ID>
+          <Name>Fact Sales Reason</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4f17b3bd-a106-4e71-95a5-298d53d393d6">
+            <DataSourceViewID>Project DM MK3</DataSourceViewID>
+            <TableID>dbo_FactSalesReason</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
